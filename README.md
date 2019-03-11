@@ -1,30 +1,17 @@
-# maze-app
+# Maze-App
+The program takes one parameter, the maze in text format and prints the solved maze upon completion.
 
+Instructions
 
-=========================================
+1.Clone this repository into your local machine using the terminal (mac) or Gitbash (PC)
+> git clone https://github.com/ary007/maze-app.git
 
-Given a maze with the following structure
+2.CD to the folder cd maze-app
 
-###########
-S #   #   #
-# # # # # #
-#   #   # #
-######### #
-# #       #
-# # #######
-# #   #   #
-# # # ### #
-#   #     F
-###########
+3. mvn clean
 
-Please write a program that can solve the maze. The blank characters 
-represent empty space and the hash character (#) represents a wall.
+4. mvn compile
 
-The cursor is unable to travel through a wall, but is able to travel
-in blank space.
+5. mvn install
 
-The cursor must start on the S character and is not finished until it
-lands on the F character.
-
-The program should take one parameter, the maze in text format and
-should print the solved maze upon completion and exit.
+6. java -jar target/maze-app-0.0.1-SNAPSHOT.jar "./src/main/resources/maze.txt"
